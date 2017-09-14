@@ -2,6 +2,8 @@
 
 Show e-commerce product images zoom slideshow in modal for Angular 4+
 
+[*__preview__*](https://rawgit.com/thatisuday/ecom-product-zoom-modal/master/demo/dist/index.html)
+
 ## Install
 ```
 npm install @plency/ecom-product-zoom-modal
