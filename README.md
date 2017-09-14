@@ -1,28 +1,57 @@
-# NgxProductModal
+## ecom-product-zoom-modal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.4.
+Show e-commerce product images zoom slideshow in modal for Angular 4+
 
-## Development server
+## Install
+```
+npm install @plency/ecom-product-zoom-modal
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Import Module
+```
+import { EcomProductZoomModalModule } from '@plency/ecom-product-zoom-modal';
 
-## Code scaffolding
+@NgModule({
+  ...,
+  imports: [
+    ...,
+    EcomProductZoomModalModule
+  ]
+})
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+## Use
+```
+import { Component, OnInit } from '@angular/core';
+import { EcomProductZoomModalImage, EcomProductZoomModalService } from '@plency/ecom-product-zoom-modal';
 
-## Build
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+  images: EcomProductZoomModalImage[] = [{
+    img: 'large-1.jpg',
+    thumb: 'small-1.jpg'
+  }, {
+    img: 'large-2.jpg',
+    thumb: 'small-2.jpg'
+  }, {
+    img: 'large-3.jpg',
+    thumb: 'small-3.jpg'
+  }];
+  
+  constructor(
+    private prodZoomModalService: EcomProductZoomModalService
+  ) { }
 
-## Running unit tests
+  ngOnInit() {
+  }
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  openModal() {
+    this.prodZoomModalService.open(this.images);
+  }
+}
+```

@@ -1,6 +1,12 @@
 {
-  "name": "ngx-product-modal",
-  "version": "0.0.0",
+  "name": "@plency/ecom-product-zoom-modal",
+  "description" : "Show e-commerce product images zoom slideshow in modal for Angular 4+",
+  "homepage": "https://github.com/thatisuday/ecom-product-zoom-modal",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thatisuday/ecom-product-zoom-modal.git"
+  },
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -10,7 +16,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
@@ -20,7 +26,10 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "angular2-click-outside": "^0.1.0",
     "core-js": "^2.4.1",
+    "lodash": "^4.17.4",
+    "ng-click-outside": "^2.4.1",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
