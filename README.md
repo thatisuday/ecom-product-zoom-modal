@@ -2,6 +2,10 @@
 
 Show e-commerce product images zoom slideshow in modal for Angular 4+
 
+[![npm](https://img.shields.io/npm/dt/ ngx-product-zoom.svg?style=flat-square)](https://www.npmjs.com/package/ ngx-product-zoom)
+[![npm](https://img.shields.io/npm/v/ ngx-product-zoom.svg?style=flat-square)](https://www.npmjs.com/package/ ngx-product-zoom)
+[![David](https://img.shields.io/david/thatisuday/ ngx-product-zoom.svg?style=flat-square)](https://www.npmjs.com/package/ ngx-product-zoom)
+
 [*__preview__*](https://rawgit.com/thatisuday/ecom-product-zoom-modal/master/demo/dist/index.html)
 
 ## Install
