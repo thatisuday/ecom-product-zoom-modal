@@ -2,6 +2,8 @@
 
 Show e-commerce product images zoom slideshow in modal for Angular 4+
 
+![](https://i.imgur.com/G7BUfph.png)
+
 [*__preview__*](https://rawgit.com/thatisuday/ecom-product-zoom-modal/master/demo/dist/index.html)
 
 [![npm](https://img.shields.io/npm/dt/@plency/ecom-product-zoom-modal.svg?style=flat-square)](https://www.npmjs.com/package/@plency/ecom-product-zoom-modal)
